@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: black;
+            text-align: center;
+
+        }
+
+        button{
+            background-color: white;
+            font-size: 2em;
+            margin-top: 350px;
+            cursor: pointer;
+            
+            
+        }
+
+    </style>
+
+     <button>
+        change color
+
+     </button>
+
+
+    <script>
+
+        var clique = document.querySelector("button");
+        
+        
+        clique.addEventListener('click', function(){
+          
+            var a,b,c,d,e,f;
+            a = Math.floor(Math.random() * 10); 
+            b = Math.floor(Math.random() * 10); 
+            c = Math.floor(Math.random() * 10); 
+            d = Math.floor(Math.random() * 10); 
+            e = Math.floor(Math.random() * 10); 
+            f = Math.floor(Math.random() * 10); 
+
+           
+            var cor = document.querySelector("body");
+            cor.style.backgroundColor = "#"+a+b+c+d+e+f;
+        });
+
+
+
+
+    </script>
+</body>
+</html>
